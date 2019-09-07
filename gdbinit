@@ -6,20 +6,27 @@
 #   ln -s ~/.gdb/gdbinit ~/.gdbinit
 #   ```
 #   
+#   ## Bugfix para mac
+#   
+#   Veja em [GDB kind of doesn't work on macOS Sierra](https://stackoverflow.com/questions/39702871/gdb-kind-of-doesnt-work-on-macos-sierra)
+#{{{
+set startup-with-shell off
+#}}}
+#   
 #   ## Histórico
 #   
-{{{
+#{{{
 set history filename ~/.gdb_history
 set history save on
-}}}
+#}}}
 #   
 #   ## Aparência
 #   
-{{{
+#{{{
 set print pretty on
 set confirm off
 set verbose off
-}}}
+#}}}
 #   
 #   ## Referências
 #
