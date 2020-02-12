@@ -4,7 +4,7 @@
 ## Instalação
 
 ```bash
-git clone ssh://git@intmain.io:8322/geraldoim/dot_gdb.git ~/.gdb
+git clone git@github.com:geraldolsribeiro/dot_gdb.git ~/.gdb
 ln -s ~/.gdb/gdbinit ~/.gdbinit
 ```
 
