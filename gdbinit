@@ -3,12 +3,16 @@
 #   ## instalação
 #   
 #   ```bash
+#   git clone ssh://git@git.intmain.io:8322/Intmain/dot_gdb.git ~/.gdb
+#   git clone https://github.com/geraldolsribeiro/dot_gdb.git ~/.gdb
 #   ln -s ~/.gdb/gdbinit ~/.gdbinit
 #   ```
 #   
 #   ## Bugfix para mac
 #   
-#   Veja em [GDB kind of doesn't work on macOS Sierra](https://stackoverflow.com/questions/39702871/gdb-kind-of-doesnt-work-on-macos-sierra)
+#   Veja em [GDB kind of doesn't work on macOS
+#   Sierra](https://stackoverflow.com/questions/39702871/gdb-kind-of-doesnt-work-on-macos-sierra)
+#
 #{{{
 set startup-with-shell off
 #}}}
