@@ -1,6 +1,6 @@
-#   # Configuração do GDB
+#   # GDB Configuration
 #   
-#   ## instalação
+#   ## Instalation
 #   
 #   ```bash
 #   git clone ssh://git@git.intmain.io:8322/Intmain/dot_gdb.git ~/.gdb
@@ -16,15 +16,23 @@
 #{{{
 set startup-with-shell off
 #}}}
+#
+#   ## Project specific configuration
 #   
-#   ## Histórico
+#   Note: you must enable project specific `.gdbinit` files with the `set auto-load local-gdbinit`.
+#   
+#{{{
+set auto-load local-gdbinit
+#}}}
+#   
+#   ## History
 #   
 #{{{
 set history filename ~/.gdb_history
 set history save on
 #}}}
 #   
-#   ## Aparência
+#   ## Appearance
 #   
 #{{{
 set print pretty on
@@ -32,7 +40,7 @@ set confirm off
 set verbose off
 #}}}
 #   
-#   ## Referências
+#   ## References
 #
 #   * [Apple’s GDB Bug?](https://reverse.put.as/2008/11/28/apples-gdb-bug/)
 #   * [github/gdbinit/Gdbinit](https://github.com/gdbinit/gdbinit)
