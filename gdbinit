@@ -19,7 +19,7 @@ set startup-with-shell off
 #
 #   ## Project specific configuration
 #   
-#   Note: you must enable project specific `.gdbinit` files with the `set auto-load local-gdbinit`.
+#   To enable project specific `.gdbinit` files.
 #   
 #{{{
 set auto-load local-gdbinit
