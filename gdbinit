@@ -39,6 +39,16 @@ set print pretty on
 set confirm off
 set verbose off
 #}}}
+
+set startup-quietly on
+
+set tui border-kind ascii
+
+# Automatic Ctrl+L after next
+define hook-next
+    refresh
+end
+
 #   
 #   ## References
 #
