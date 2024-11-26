@@ -35,14 +35,44 @@ set history save on
 #   ## Appearance
 #   
 #{{{
+set prompt ❯ 
 set print pretty on
 set confirm off
 set verbose off
+set style enabled on
+
+# These make gdb never pause in its output
+set height 0
+set width 0
+
+# set enable-color on
+# set colors stacktrace on
+# set colors breakpoint on
+# set colors source on
 #}}}
+
+set print elements 100
+
+# show full information for each frame:
+# set backtrace full
+
+# Enable pretty printing for STL containers
+# python
+# import gdb
+# from gdb.printing import PrettyPrinter
+# gdb.pretty_printers.append(PrettyPrinter())
+# end
 
 set startup-quietly on
 
-set tui border-kind ascii
+# set tui border-kind ascii
+# set tui current-line
+
+# Create custom alias
+define my_breakpoint
+  break main
+  print myVariable
+end
 
 # Automatic Ctrl+L after next
 define hook-next
