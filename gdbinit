@@ -35,7 +35,7 @@ set history save on
 #   ## Appearance
 #   
 #{{{
-set prompt ❯ 
+# set prompt ❯ 
 set print pretty on
 set confirm off
 set verbose off
