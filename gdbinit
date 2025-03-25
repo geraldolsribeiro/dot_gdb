@@ -40,6 +40,8 @@ set print pretty on
 set confirm off
 set verbose off
 set style enabled on
+set print array off
+set print array-indexes on
 
 # These make gdb never pause in its output
 set height 0
