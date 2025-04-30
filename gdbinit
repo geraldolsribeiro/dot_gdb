@@ -20,9 +20,11 @@ set startup-with-shell off
 #   ## Project specific configuration
 #   
 #   To enable project specific `.gdbinit` files.
+#   Requires an accordingly configured `auto-load safe-path`
 #   
 #{{{
-set auto-load local-gdbinit
+set auto-load local-gdbinit on
+set auto-load safe-path /home/geraldo
 #}}}
 #   
 #   ## History
@@ -44,8 +46,8 @@ set print array off
 set print array-indexes on
 
 # These make gdb never pause in its output
-set height 0
-set width 0
+# set height 0
+# set width 0
 
 # set enable-color on
 # set colors stacktrace on
@@ -78,7 +80,7 @@ end
 
 # Automatic Ctrl+L after next
 define hook-next
-    refresh
+  refresh
 end
 
 #   
@@ -87,4 +89,3 @@ end
 #   * [Apple’s GDB Bug?](https://reverse.put.as/2008/11/28/apples-gdb-bug/)
 #   * [github/gdbinit/Gdbinit](https://github.com/gdbinit/gdbinit)
 #   * [Reverse Engineering Mac OS X](https://reverse.put.as/)
-
